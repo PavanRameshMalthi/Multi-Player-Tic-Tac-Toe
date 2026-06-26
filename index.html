@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Multi-Player Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="panel">
+        <h2>Match Settings</h2>
+        <div class="control-group">
+            <label for="boardSize">Grid Size</label>
+            <select id="boardSize">
+                <option value="3">3 x 3 (Standard)</option>
+                <option value="4">4 x 4 (Advanced)</option>
+            </select>
+        </div>
+        <button id="resetMatchBtn" class="btn-primary">Reset Entire Match</button>
+
+        <h2>Scoreboard</h2>
+        <div class="stat-line"><span>Player X:</span><span id="scoreX" class="score-x">0</span></div>
+        <div class="stat-line"><span>Player O:</span><span id="scoreO" class="score-o">0</span></div>
+        <div class="stat-line"><span>Draws:</span><span id="scoreDraws" style="color: var(--text-muted)">0</span></div>
+    </div>
+
+    <div class="game-center">
+        <div class="status-display" id="statusDisplay">
+            <span>Current Turn:</span>
+            <span id="turnIndicator" class="turn-indicator turn-x">Player X</span>
+        </div>
+
+        <div class="board" id="gameBoard"></div>
+
+        <button id="nextGameBtn" style="width: 100%; max-width: 400px; display: none;">
+            Play Next Round
+        </button>
+    </div>
+
+    <div class="panel">
+        <h2>Game History</h2>
+        <ul class="history-list" id="historyList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

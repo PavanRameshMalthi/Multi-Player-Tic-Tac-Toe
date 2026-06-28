@@ -1,4 +1,4 @@
-# Advanced Multi-Player Tic-Tac-Toe
+# Multi-Player Tic-Tac-Toe
 
 ## 🎮 Overview
 A modern multiplayer Tic-Tac-Toe game built using HTML, CSS, and JavaScript featuring multiple game modes, interactive UI, score tracking, animations, and responsive design.
